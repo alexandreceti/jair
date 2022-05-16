@@ -27,7 +27,6 @@ function DataViewPSS(props) {
 
   return (
     <div className='table-container'>
-      {/* {JSON.stringify(datas.sort())} */}
       <table className="table is-bordered is-striped is-narrow is-hoverable">
         <thead>
           <tr>

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Link from 'next/link';
 import React from 'react';
-import { pss } from '../../../pages/pss';
+
 import dayjs from 'dayjs'
 
 dayjs.locale('pt-BR')

@@ -6,6 +6,8 @@ interface filterDto {
   inicio: string;
   fim: string
 }
+dayjs.locale('pt-BR')
+dayjs.extend(isBetween)
 
 export default function FilterPPS({ dados, setDados }) {
 
