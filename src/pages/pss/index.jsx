@@ -4,14 +4,12 @@ import DataViewPSS from '../../components/pss/DataView';
 import FilterPPS from '../../components/pss/Filter'
 import dadosJson from '../../db/dados.json'
 
-export type pss = typeof dadosJson
-
 export default function HomePPS() {
 
   const [tabSelect, setTabSelect] = useState("dados");
-  const [dados, setDados] = useState<pss>([]);
+  const [dados, setDados] = useState([]);
 
-  function selectTab(tab: string) {
+  function selectTab(tab) {
     setTabSelect(tab);
   }
 

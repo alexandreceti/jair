@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import { NextPage } from 'next'
 import Link from 'next/link';
 import React from 'react';
 

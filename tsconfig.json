@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,6 +19,19 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/pss/DataTable/ItemTable/index.jsx",
+    "src/components/pss/DataTable/index.jsx",
+    "src/components/pss/DataView/index.jsx",
+    "src/components/pss/Filter/index.jsx",
+    "src/pages/pss/index.jsx",
+    "src/pages/_app.jsx",
+    "src/pages/index.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

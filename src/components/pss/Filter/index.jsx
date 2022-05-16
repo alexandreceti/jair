@@ -2,24 +2,21 @@ import React, { useState } from 'react';
 import dayjs from 'dayjs'
 import isBetween from 'dayjs/plugin/isBetween'
 
-interface filterDto {
-  inicio: string;
-  fim: string
-}
+
 dayjs.locale('pt-BR')
 dayjs.extend(isBetween)
 
 export default function FilterPPS({ dados, setDados }) {
 
-  const [filter, setFilter] = useState({} as filterDto)
+  const [filter, setFilter] = useState({})
   function handlerFilter() {
-    console.log(JSON.stringify(filter))
+    
 
     const newdados = dados.filter((item) => {
       const dataAtual = dayjs(item.dataIni).isBetween(filter.inicio, filter.fim, null, "[")
       if (dataAtual) return item;
     })
-    console.log(newdados)
+    
     setDados(newdados)
   }
 
